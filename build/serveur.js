@@ -27,6 +27,7 @@ const http = __importStar(require("http"));
 const server = http.createServer((req, res) => {
     if (req.method === 'GET' && req.url === '/ping') {
         const headers = req.headers;
+        console.log(Object.keys(headers));
         res.writeHead(200, {
             'Content-Type': 'application/json',
         });

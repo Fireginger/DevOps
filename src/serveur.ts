@@ -1,8 +1,10 @@
 import * as http from 'http';
+import * as os from 'os';
 
 const server = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/ping') {
     const headers = req.headers;
+    console.log(os.hostname());
 
     res.writeHead(200, {
       'Content-Type': 'application/json',

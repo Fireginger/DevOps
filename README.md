@@ -21,5 +21,7 @@ http://localhost:3000/ping
 
 ## Note
 
+Pour changer l'image utilisée, il suffit juste de remplacer la ligne "Dockerfile1" par l'image que l'on ne souhaite pas utiliser dans le fichier .dockerignore .
+
 Ce projet à pour but de permettre à un utilisateur de récupérer les Headers de la requête HTTP GET sur l'adresse /ping.
 Si l'utilisateur envoie une requête HTTP GET sur une autre adresse, il recevra une erreur 404.

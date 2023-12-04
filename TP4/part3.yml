@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: default
+  namespace: kubernetestp
   name: pod3
 spec:
   replicas: 4

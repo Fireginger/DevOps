@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: default
+  namespace: kubernetestp
   name: pod1
 spec:
   containers:

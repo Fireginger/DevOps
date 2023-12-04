@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
+  namespace: default
   name: pod2
 spec:
   replicas: 4
@@ -21,6 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: default
   name: mon-service
 spec:
   selector:
@@ -34,11 +36,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  namespace: default
   name: tpkubernetes-ingress
 spec:
   ingressClassName: nginx
   rules:
-  - host: tpkubernetes.com
+  - host: kubernetes.thomas.com
     http:
       paths:
       - pathType: Prefix

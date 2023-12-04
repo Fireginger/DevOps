@@ -25,3 +25,10 @@ Pour changer l'image utilisée, il suffit juste de remplacer la ligne "Dockerfil
 
 Ce projet à pour but de permettre à un utilisateur de récupérer les Headers de la requête HTTP GET sur l'adresse /ping.
 Si l'utilisateur envoie une requête HTTP GET sur une autre adresse, il recevra une erreur 404.
+
+
+## Kubernetes
+
+Pour la partie kubernetes voici la capture d'écran de la page internet :
+
+![Image Kubernetes](/kubernetes.png)
